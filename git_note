@@ -1,0 +1,111 @@
+                                       ================= git short note =====================
+
+------------------------------------------------------------------
+1. git init                                       (one time needed)
+2. git add .                                      (for each push needed)
+3. git commit -m "your message"                   (for each push needed)
+
+  git commit -a -m "your message"                 (short for add and commit)
+
+
+4. git branch -M main
+5. git remote add customRepoName gitUrl
+6. git push -u customRepoName main
+     git user  :
+    git passwd :
+-------------------------------------------------------------------
+to see git commit log --> 
+
+   git log
+
+to see git status of branchName/file commit etc. -->
+ 
+   git status
+-------------------------------------------------------------------
+make new branch -->
+
+git branch newBranchName
+
+switch to branch -->
+
+git checkout yourBranchName
+
+git merge branch --->
+
+git merge sourceBranch
+
+
+check remote repo added status -->
+git remote
+git remote -v
+
+clone remote repositry -->
+
+git clone remoteRepoUrl
+
+add remote repository -->
+
+git remote add customRepoName repoUrl
+------------------------------------------------------------------
+
+------------------------------------------------------------------
+merge remote to local -->
+
+git pull customRepoName
+
+
+push local to reomte -->
+
+git push customRepoName master
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+to keep changes aside -->
+git stash
+
+to keep changes back -->
+git stash pop
+
+see stash list -->
+git stash list
+
+# drop top hash, stash@{0} -->
+git stash drop 
+
+
+# drop specific stash - see git stash list -->           
+git stash drop stash@{n}  
+----------------------------------------------------------------
+
+
+----------------------------------------------------------------
+meld (for merging) --> 
+
+sudo apt install meld
+
+see changes made -->
+
+git difftool --dir-dif -y -g -t meld
+
+merging -->
+
+git mergetool --tool=meld
+
+----------------------------------------------------------------
+
+ref: 
+https://stackoverflow.com/questions/161813/how-to-resolve-merge-conflicts-in-a-git-repository
+https://www.howtoinstall.me/ubuntu/18-04/meld/
+
+
+
+
+
+
+
+
+
+
+
+
