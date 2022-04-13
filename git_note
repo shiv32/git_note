@@ -41,15 +41,13 @@ git push -u origin my-branch-name
 If your local branch already exists on the remote -->
 git push 
 
-make new branch -->
+make new branch(local) -->
 git branch newBranchName
 
 switch to branch -->
-
 git checkout yourBranchName
 
 git merge branch --->
-
 git merge sourceBranch
 
 To delete a remote branch -->
@@ -60,6 +58,7 @@ git branch -d my-branch-name
 git branch -D my-branch-name         (--delete --force)
 
 -------------------------------------------------------------------
+
 check remote repo added status -->
 git remote
 git remote -v
