@@ -21,9 +21,27 @@ to see git commit log -->
 to see git status of branchName/file commit etc. -->
  
    git status
--------------------------------------------------------------------
-make new branch -->
+----------------------------- Branch --------------------------------------
+To see remote branches -->
+git branch -r 
 
+To see all local and remote branches -->
+git branch -a 
+
+To see local branches -->
+git branch 
+
+Switch to a Branch That Came From a Remote Repo -->
+git pull 
+git checkout --track origin/my-branch-name 
+
+Push to a Branch(Remote) or If your local branch does not exist on the remote -->
+git push -u origin my-branch-name 
+
+If your local branch already exists on the remote -->
+git push 
+
+make new branch -->
 git branch newBranchName
 
 switch to branch -->
@@ -34,7 +52,14 @@ git merge branch --->
 
 git merge sourceBranch
 
+To delete a remote branch -->
+git push origin --delete my-branch-name 
 
+To delete a local branch -->
+git branch -d my-branch-name 
+git branch -D my-branch-name         (--delete --force)
+
+-------------------------------------------------------------------
 check remote repo added status -->
 git remote
 git remote -v
@@ -104,6 +129,7 @@ ref:
 https://stackoverflow.com/questions/161813/how-to-resolve-merge-conflicts-in-a-git-repository
 https://www.howtoinstall.me/ubuntu/18-04/meld/
 https://stackoverflow.com/questions/9529078/how-do-i-use-git-reset-hard-head-to-revert-to-a-previous-commit
+https://www.nobledesktop.com/learn/git/git-branches
 
 
 
