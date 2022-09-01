@@ -124,11 +124,42 @@ git reset --hard commit_value
 Note --> commit_value see in "git log" command output
 ------------------------------------------------------------------
 
+Automatic merge failed; fix conflicts and then commit the result -->
+
+git checkout --ours *.c
+git checkout --theirs *.c
+git add .
+git commit -m "remote chages"
+git pull origin master
+
+After above commands run remote file changes will reflect in local project.
+
+after conflict keep all changes -->
+   
+   1. See the conflict files -->
+   
+     git status
+
+   2. Open file and check conflicts mark eg.
+
+     <<<<<<<<head
+     xyz
+
+  3. remove conflicts mark manually
+     git add .
+     git commit -m 'merge files'
+     git push -u origin main
+
+------------------------------------------------------------------------
+
+
+
 ref: 
 https://stackoverflow.com/questions/161813/how-to-resolve-merge-conflicts-in-a-git-repository
 https://www.howtoinstall.me/ubuntu/18-04/meld/
 https://stackoverflow.com/questions/9529078/how-do-i-use-git-reset-hard-head-to-revert-to-a-previous-commit
 https://www.nobledesktop.com/learn/git/git-branches
+https://stackoverflow.com/questions/161813/how-do-i-resolve-merge-conflicts-in-a-git-repository
 
 
 
