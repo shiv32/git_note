@@ -151,6 +151,13 @@ after conflict keep all changes -->
      git push -u origin main
 
 ------------------------------------------------------------------------
+From your terminal, untrack the file
+
+ git rm --cached FILENAME
+
+ untrack all
+
+ git rm --cached -r *
 
 
 
