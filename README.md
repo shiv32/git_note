@@ -1,4 +1,4 @@
 git note
 change 1
 
-[![Youtube](https://www.transparentpng.com/download/youtube-logo/clipart-youtube-logo-photo-16.png)](https://www.youtube.com/@ShivMLinux)
+ [![Youtube](https://img.shields.io/badge/YouTube-red?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@ShivMLinux)
